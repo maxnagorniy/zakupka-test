@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>Zakupka test</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/main.css">
+</head>
+<body>
+
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__wrap">
+                <div class="header-top__left">
+                    <a href="#">
+                        <img src="./public/images/logo_zakupka.png" alt="logo-zakupka">
+                    </a>
+                    <a href="#">
+                        <img src="./public/images/vip.png" alt="vip-icon">
+                    </a>
+                    <a href="#">
+                        CRM
+                    </a>
+                    <a href="#">
+                        Добавить компанию на Zakupka.com
+                    </a>
+                    <a href="#">
+                        Заказать обратный звонок
+                    </a>
+                </div>
+                <div class="header-top__right">
+                    <a href="#" class="header-top__user">
+                        Мой кабинет
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="/">
+                    <img src="./public/images/beauty-logo.png" alt="logo">
+                </a>
+            </div>
+            <nav class="nav">
+                <div class="nav__menu">
+                    <button type="button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="nav__left">
+                    <a href="#">Главная</a>
+                    <a href="#">Товары и услуги</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="nav__right">
+                    <a href="#" class="nav__search"></a>
+                    <a href="#" class="nav__phone"></a>
+                    <a href="#" class="nav__cart">
+                        <span>25</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="filter-btn">
+            <span class="default-btn">
+                <button type="button">
+                    Фильтры
+                </button>
+            </span>
+        </div>
+        <div class="title">
+            <span class="title__text">Фильтры</span>
+        </div>
+        <div class="breadcrumbs__block">
+            <span class="default-btn">
+                <button type="button">
+                    <i class="fas fa-home"></i>
+                </button>
+            </span>
+            <span class="default-btn">
+                <span class="default-btn__arrow">
+                    <i class="fas fa-caret-down"></i>
+                </span>
+                <select>
+                    <option value="1">Товары и услуги</option>
+                    <option value="1">Товары 2</option>
+                    <option value="1">Товары 3</option>
+                </select>
+            </span>
+            <span class="default-btn">
+                <button type="button">Парфюмерия</button>
+            </span>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="content__wrap">
+                <aside class="sidebar">
+                    <h4>Выбранные фильтры:</h4>
+                    <div class="choose-filters">
+                        <div class="choose-filters__item">
+                            <div class="choose-filters__item-text">
+                                для женщин
+                            </div>
+                            <div class="choose-filters__item-del">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                        <div class="choose-filters__item">
+                            <div class="choose-filters__item-text">
+                                для лица
+                            </div>
+                            <div class="choose-filters__item-del">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                        <div class="choose-filters__item">
+                            <div class="choose-filters__item-text">
+                                для ступней
+                            </div>
+                            <div class="choose-filters__item-del">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="remove-filters">Убрать все фильтры</a>
+
+                    <ul class="filter">
+                        <li class="filter__item active">
+                            <div class="filter__item-title">
+                                <h4>Диапазон цен</h4>
+                            </div>
+                            <div class="filter__item-content">
+                                <form class="filter__price-value">
+                                    <div class="filter__input">
+                                        <input id="first" type="text">
+                                        <label for="first"></label>
+                                    </div>
+                                    <span class="line"></span>
+                                    <div class="filter__input">
+                                        <input id="second" type="text">
+                                        <label for="second"></label>
+                                    </div>
+                                    <div class="default-btn green-btn submit-form">
+                                        <button type="submit" >OK</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="filter__item active">
+                            <div class="filter__item-title">
+                                <h4>Пол</h4>
+                            </div>
+                            <div class="filter__item-content">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" disabled>
+                                    <span class="custom-checkbox__text">Для детей</span>
+                                    <span class="custom-checkbox__checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" >
+                                    <span class="custom-checkbox__text">Для мужчин</span>
+                                    <span class="custom-checkbox__checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="custom-checkbox__text">Для женщин</span>
+                                    <span class="custom-checkbox__checkmark"></span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="filter__item active">
+                            <div class="filter__item-title">
+                                <h4>Для чего</h4>
+                            </div>
+                            <div class="filter__item-content">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" disabled>
+                                    <span class="custom-checkbox__text">Для рук</span>
+                                    <span class="custom-checkbox__checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" >
+                                    <span class="custom-checkbox__text">Для ног</span>
+                                    <span class="custom-checkbox__checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="custom-checkbox__text">Для лица</span>
+                                    <span class="custom-checkbox__checkmark"></span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="filter__item">
+                            <div class="filter__item-title">
+                                <h4>Возраст</h4>
+                            </div>
+                            <div class="filter__item-content">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" disabled>
+                                    <span class="custom-checkbox__text">от 18 до 25</span>
+                                    <span class="custom-checkbox__checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" >
+                                    <span class="custom-checkbox__text">от 26 до 40</span>
+                                    <span class="custom-checkbox__checkmark"></span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="custom-checkbox__text">больше 40</span>
+                                    <span class="custom-checkbox__checkmark"></span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="filter__item">
+                            <div class="filter__item-title">
+                                <h4>Добавки</h4>
+                            </div>
+                        </li>
+                        <li class="filter__item">
+                            <div class="filter__item-title">
+                                <h4>Ароматизаторы</h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="filter__btn">
+                        <span class="default-btn green-btn">
+                            <button type="button">
+                                Применить
+                            </button>
+                        </span>
+                        <span class="default-btn green-btn">
+                            <button type="button">
+                                Сбросить
+                            </button>
+                        </span>
+                    </div>
+
+
+
+
+                    <div class="products">
+
+                        <div class="special-title">
+                            <h3 class="special-title__text">Товары и услуги</h3>
+                        </div>
+
+                        <ul class="product-list">
+                            <li class="product-list__item">
+                                <div class="product-list__item-title">
+                                    <h4>Ухаживающая косметика</h4>
+                                </div>
+                                <div class="product-list__item-content">
+                                    <a href="#">654</a>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-title">
+                                    <h4>Парфюмерия</h4>
+                                </div>
+                                <div class="product-list__item-content">
+                                    <a href="#">654</a>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-title">
+                                    <h4>Интимные товары</h4>
+                                </div>
+                                <div class="product-list__item-content">
+                                    <a href="#">654</a>
+                                </div>
+                            </li>
+                            <li class="product-list__item active">
+                                <div class="product-list__item-title">
+                                    <h4>Косметика декоративная</h4>
+                                </div>
+                                <div class="product-list__item-content">
+                                    <a href="#">Помада</a>
+                                    <a href="#">Тени для век и бровей</a>
+                                    <a href="#" class="active">Косметические инструменты</a>
+                                    <a href="#">Блеск для губ</a>
+                                    <a href="#">Косметические карандаши</a>
+                                    <a href="#">Пудра косметическая</a>
+                                    <a href="#">Тушь для ресниц</a>
+                                    <a href="#">Тональный крем</a>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-title">
+                                    <h4>Гигиенические изделия</h4>
+                                </div>
+                                <div class="product-list__item-content">
+                                    <a href="#">654</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="special-title-subscribe">
+                            <h3 class="special-title-subscribe__text">Подписаться на рассылку</h3>
+                        </div>
+                        <div class="special-subscribe" id="special_subscribe">
+                            <form class="subscribe">
+                                <input class="subscribe__input" id="custom_input" placeholder="Email" type="email">
+                                <button class="subscribe__btn" type="submit"><img src="./public/images/send-msg-icon.png" alt="send-icon"></button>
+                            </form>
+                        </div>
+                        <div class="social-link">
+                            <a href="http://vk.com" target="_blank">
+                                <i class="fab fa-vk" style="color: #4c75a3;"></i>
+                            </a>
+                            <a href="https://facebook.com" target="_blank">
+                                <i class="fab fa-facebook-f" style="color: #4867aa;"></i>
+                            </a>
+                            <a href="http://odnoklassniki.ru/" target="_blank">
+                                <i class="fab fa-odnoklassniki" style="color: #f7931e;"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank">
+                                <i class="fab fa-twitter" style="color: #41abe1;"></i>
+                            </a>
+                            <a href="https://plus.google.com/" target="_blank">
+                                <i class="fab fa-google-plus-g" style="color: #dd4c3b;"></i>
+                            </a>
+                            <a href="https://youtube.com" target="_blank">
+                                <i class="fab fa-youtube" style="color: #ee1c1b;"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </aside>
+                <main class="main">
+                    <div class="main__sort">
+                        <div class="main__sort-left">
+                            <div class="main__sort-text">
+                                <p>Сортировка:</p>
+                                <span class="default-btn">
+                                    <span class="default-btn__arrow">
+                                        <i class="fas fa-caret-down"></i>
+                                    </span>
+                                    <select>
+                                        <option value="1">По популярности</option>
+                                        <option value="1">По цене</option>
+                                        <option value="1">По умолчанию</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="main__sort-text">
+                                <p>Количество товаров на странице:</p>
+                                <span class="default-btn">
+                                    <span class="default-btn__arrow">
+                                        <i class="fas fa-caret-down"></i>
+                                    </span>
+                                    <select>
+                                        <option value="1">20</option>
+                                        <option value="1">50</option>
+                                        <option value="1">100</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="main__sort-right">
+                            <div class="main__sort-text">
+                                <p>Вид:</p>
+                                <span class="default-btn">
+                                    <span class="default-btn__icon">
+                                        <i class="fas fa-th-large"></i>
+                                    </span>
+                                    <span class="default-btn__arrow">
+                                        <i class="fas fa-caret-down"></i>
+                                    </span>
+                                    <select>
+                                        <option value="1">Галерея</option>
+                                        <option value="1">Список</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- If you want change sort carts, add "div.carts-wrap" class "cart-sm" or "cert-md" or "cart-lg" -->
+
+                    <div class="carts-wrap cart-sm">
+                        <div class="cart">
+                            <div class="cart__media">
+                                <div class="cart__img">
+                                    <img src="./public/images/img-md3.jpg" alt="img1">
+                                </div>
+                                <div class="cart__sale">
+                                <span class="new">
+                                    <span class="new__text">Новинка</span>
+                                </span>
+                                    <span class="sale">
+                                    <span class="sale__text">Скидки</span>
+                                </span>
+                                </div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__price">
+                                    <span>195 <sub>грн</sub></span>
+                                    <!--<span>1230 грн</span>-->
+                                </div>
+                                <div class="cart__description">
+                                    <p>Набор теней Urban Decay Naked 2 - 12 цветов, Киев</p>
+                                </div>
+                                <div class="cart__stock">
+                                <span class="stock">
+                                    <i class="fas fa-check"></i>
+                                    В наличии
+                                </span>
+                                    <!--<span class="not-available">-->
+                                    <!--Нет в наличии-->
+                                    <!--</span>-->
+                                </div>
+                                <div class="cart__btn">
+                                    <div class="special-btn">
+                                        <div class="special-btn__wrap">
+                                            <a href="#" class="special-btn__link"></a>
+                                            <span class="special-btn__text">Купить</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <div class="cart__media">
+                                <div class="cart__img">
+                                    <img src="./public/images/img2.jpg" alt="img2">
+                                </div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__price">
+                                    <span>265 <sub>грн</sub></span>
+                                    <!--<span>1230 грн</span>-->
+                                </div>
+                                <div class="cart__description">
+                                    <p>Набор теней Urban Decay Naked 2 - 12 цветов, Киев</p>
+                                </div>
+                                <div class="cart__stock">
+                                <span class="stock">
+                                    <i class="fas fa-check"></i>
+                                    В наличии
+                                </span>
+                                    <!--<span class="not-available">-->
+                                    <!--Нет в наличии-->
+                                    <!--</span>-->
+                                </div>
+                                <div class="cart__btn">
+                                    <div class="special-btn">
+                                        <div class="special-btn__wrap">
+                                            <a href="#" class="special-btn__link"></a>
+                                            <span class="special-btn__text">Купить</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <div class="cart__media">
+                                <div class="cart__img">
+                                    <img src="./public/images/img3.jpg" alt="img3">
+                                </div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__price">
+                                    <span>1026 <sub>грн</sub></span>
+                                    <!--<span>1230 грн</span>-->
+                                </div>
+                                <div class="cart__description">
+                                    <p>Набор тени помады румяна 114 цветов МАС палитра для палитра для палитра для</p>
+                                </div>
+                                <div class="cart__stock">
+                                <span class="stock">
+                                    <i class="fas fa-check"></i>
+                                    В наличии
+                                </span>
+                                    <!--<span class="not-available">-->
+                                    <!--Нет в наличии-->
+                                    <!--</span>-->
+                                </div>
+                                <div class="cart__btn">
+                                    <div class="special-btn">
+                                        <div class="special-btn__wrap">
+                                            <a href="#" class="special-btn__link"></a>
+                                            <span class="special-btn__text">Купить</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <div class="cart__media">
+                                <div class="cart__img">
+                                    <img src="./public/images/img4.jpg" alt="img4">
+                                </div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__price">
+                                    <span>2161 <sub>грн</sub></span>
+                                    <span>2161 грн</span>
+                                </div>
+                                <div class="cart__description">
+                                    <p>Набор тени помады румяна 114 цветов МАС палитра для палитра для палитра для</p>
+                                </div>
+                                <div class="cart__stock">
+                                <span class="stock">
+                                    <i class="fas fa-check"></i>
+                                    В наличии
+                                </span>
+                                    <!--<span class="not-available">-->
+                                    <!--Нет в наличии-->
+                                    <!--</span>-->
+                                </div>
+                                <div class="cart__btn">
+                                    <div class="special-btn">
+                                        <div class="special-btn__wrap">
+                                            <a href="#" class="special-btn__link"></a>
+                                            <span class="special-btn__text">Купить</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart active">
+                            <div class="cart__media">
+                                <div class="cart__img">
+                                    <img src="./public/images/img5.jpg" alt="img5">
+                                </div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__price">
+                                    <span>195 <sub>грн</sub></span>
+                                    <!--<span>1230 грн</span>-->
+                                </div>
+                                <div class="cart__description">
+                                    <p>Набор тени помады румяна 114 цветов МАС палитра для палитра для палитра для</p>
+                                </div>
+                                <div class="cart__stock">
+                                <span class="stock">
+                                    <i class="fas fa-check"></i>
+                                    В наличии
+                                </span>
+                                    <!--<span class="not-available">-->
+                                    <!--Нет в наличии-->
+                                    <!--</span>-->
+                                </div>
+                                <div class="cart__btn">
+                                    <div class="special-btn">
+                                        <div class="special-btn__wrap">
+                                            <a href="#" class="special-btn__link"></a>
+                                            <span class="special-btn__text">В корзине</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart disable">
+                            <div class="cart__media">
+                                <div class="cart__img">
+                                    <img src="./public/images/img6.jpg" alt="img6">
+                                </div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__price">
+                                    <span>265 <sub>грн</sub></span>
+                                    <!--<span>1230 грн</span>-->
+                                </div>
+                                <div class="cart__description">
+                                    <p>Двойной корректор Correct</p>
+                                </div>
+                                <div class="cart__stock">
+                                    <!--<span class="stock">-->
+                                    <!--<i class="fas fa-check"></i>-->
+                                    <!--В наличии-->
+                                    <!--</span>-->
+                                    <span class="not-available">
+                                    Нет в наличии
+                                </span>
+                                </div>
+                                <div class="cart__btn">
+                                    <div class="special-btn">
+                                        <div class="special-btn__wrap">
+                                            <a href="#" class="special-btn__link"></a>
+                                            <span class="special-btn__text">Заказать</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carts-wrap cart-md">
+                        <div class="cart ">
+                            <div class="cart__media">
+                                <div class="cart__img">
+                                    <img src="./public/images/img-md1.jpg" alt="img-md1">
+                                </div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__price">
+                                    <span>2161 <sub>грн</sub></span>
+                                    <span>2161 грн</span>
+                                </div>
+                                <div class="cart__description">
+                                    <p>Набор тени помады румяна 114 цветов МАС палитра для палитра для палитра для<br>Бесплатная доставка!</p>
+                                </div>
+                                <div class="cart__stock">
+                                <span class="stock">
+                                    <i class="fas fa-check"></i>
+                                    В наличии
+                                </span>
+                                    <!--<span class="not-available">-->
+                                    <!--Нет в наличии-->
+                                    <!--</span>-->
+                                </div>
+                                <div class="cart__btn">
+                                    <span class="code">Код: 0232515</span>
+                                    <div class="special-btn">
+                                        <div class="special-btn__wrap">
+                                            <a href="#" class="special-btn__link"></a>
+                                            <span class="special-btn__text">Купить</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <div class="cart__media">
+                                <div class="cart__img">
+                                    <img src="./public/images/img-md2.jpg" alt="img-md2">
+                                </div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__price">
+                                    <span>2161 <sub>грн</sub></span>
+                                    <span>2161 грн</span>
+                                </div>
+                                <div class="cart__description">
+                                    <p>Набор тени помады румяна 114 цветов МАС палитра для палитра для палитра для<br>Бесплатная доставка!</p>
+                                </div>
+                                <div class="cart__stock">
+                                <span class="stock">
+                                    <i class="fas fa-check"></i>
+                                    В наличии
+                                </span>
+                                    <!--<span class="not-available">-->
+                                    <!--Нет в наличии-->
+                                    <!--</span>-->
+                                </div>
+                                <div class="cart__btn">
+                                    <span class="code">Код: 0232515</span>
+                                    <div class="special-btn">
+                                        <div class="special-btn__wrap">
+                                            <a href="#" class="special-btn__link"></a>
+                                            <span class="special-btn__text">Купить</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <div class="cart__media">
+                                <div class="cart__img">
+                                    <img src="./public/images/img-md3.jpg" alt="img-md3">
+                                </div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__price">
+                                    <span>2161 <sub>грн</sub></span>
+                                    <span>2161 грн</span>
+                                </div>
+                                <div class="cart__description">
+                                    <p>Набор тени помады румяна 114 цветов МАС палитра для палитра для палитра для<br>Бесплатная доставка!</p>
+                                </div>
+                                <div class="cart__stock">
+                                <span class="stock">
+                                    <i class="fas fa-check"></i>
+                                    В наличии
+                                </span>
+                                    <!--<span class="not-available">-->
+                                    <!--Нет в наличии-->
+                                    <!--</span>-->
+                                </div>
+                                <div class="cart__btn">
+                                    <span class="code">Код: 0232515</span>
+                                    <div class="special-btn">
+                                        <div class="special-btn__wrap">
+                                            <a href="#" class="special-btn__link"></a>
+                                            <span class="special-btn__text">Купить</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carts-wrap cart-lg">
+                        <div class="cart ">
+                            <div class="cart__media">
+                                <div class="cart__img">
+                                    <img src="./public/images/img-lg1.jpg" alt="img-lg1">
+                                </div>
+                            </div>
+                            <div class="cart__info">
+                                <div class="cart__price">
+                                    <span>2161 <sub>грн</sub></span>
+                                    <span>2161 грн</span>
+                                </div>
+                                <div class="cart__description">
+                                    <p>Набор теней Urban Decay Naked 2 - 12 цветов, Киев! </p>
+                                </div>
+                                <div class="cart__stock">
+                                <span class="stock">
+                                    <i class="fas fa-check"></i>
+                                    В наличии
+                                </span>
+                                    <!--<span class="not-available">-->
+                                    <!--Нет в наличии-->
+                                    <!--</span>-->
+                                </div>
+                                <div class="cart__btn">
+                                    <span class="code">Код: 0232515</span>
+                                    <div class="special-btn">
+                                        <div class="special-btn__wrap">
+                                            <a href="#" class="special-btn__link"></a>
+                                            <span class="special-btn__text">Купить</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main__pagination">
+
+                        <div class="main__pagination-set">
+                            <span class="default-btn green-btn">
+                                <a href="#" >
+                                    &laquo;
+                                </a>
+                            </span>
+                            <span class="default-btn green-btn">
+                                <a href="#">
+                                    1
+                                </a>
+                            </span>
+                            <span class="default-btn green-btn active">
+                                <a href="#">
+                                    2
+                                </a>
+                            </span>
+                            <span class="default-btn green-btn">
+                                <button>
+                                    ...
+                                </button>
+                            </span>
+                            <span class="default-btn green-btn">
+                                <a href="#">
+                                    100
+                                </a>
+                            </span>
+                            <span class="default-btn green-btn">
+                                <a href="#">
+                                    &raquo;
+                                </a>
+                            </span>
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="line"></div>
+        <div class="footer__wrap">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <img src="./public/images/beauty-logo.png" alt="logo-footer">
+                </div>
+                <p>Интернет-магазин косметики и аксессуаров</p>
+                <div class="footer__hit">
+                    <img src="./public/images/hit-icon.jpg" alt="hit">
+                </div>
+                <div class="footer__callback">
+                    <a href="#">Сайт создан на платформе Zakupka.com</a>
+                    <a href="#">Пожаловаться на содержание</a>
+                </div>
+                <p>© Все права защищены. 2012-2017 BeautyShop</p>
+            </div>
+            <div class="footer__right">
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        <h4>Полезные ссылки</h4>
+                    </div>
+                    <div class="footer__item-link">
+                        <div class="footer__item-link-left">
+                            <a href="#">Главная</a>
+                            <a href="#">О нас</a>
+                            <a href="#">Доставка и оплата</a>
+                            <a href="#">Акции</a>
+                            <a href="#">Новости</a>
+                            <a href="#">Статьи</a>
+                            <a href="#">Контакты</a>
+                        </div>
+                        <div class="footer__item-link-right">
+                            <a href="#">Прайс листы</a>
+                            <a href="#">Фотогалерея</a>
+                            <a href="#">Тренды</a>
+                            <a href="#">Документы</a>
+                            <a href="#">Вакансии</a>
+                            <a href="#">Наши партнеры</a>
+                            <a href="#">Вопросы и ответы</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        <h4>Контактная информация</h4>
+                    </div>
+                    <div class="footer__item-contact">
+                        <h5>BeautyShop</h5>
+
+                        <span class="user">Олег Чубанов</span>
+                        <a href="tel:+380991234567" class="phone">+38 (099) 12 34 567</a>
+                        <span class="address">Украина, г.Киев, ул Соборная 251а</span>
+                        <span class="time">Пн-Пт: 10:00 - 19:00<br>Сб-Вс: 10:00 - 15:00</span>
+                        <a href="mailto:beautyshop@gmail.com" class="mail">Написать нам</a>
+
+                    </div>
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        <h4>Подписаться на рассылку</h4>
+                    </div>
+                    <div class="footer__item-subscribe">
+                        <form class="subscribe">
+                            <input class="subscribe__input" placeholder="Email" type="email">
+                            <button class="subscribe__btn" type="submit"><img src="./public/images/send-msg-icon.png" alt="send-icon"></button>
+                        </form>
+                    </div>
+                    <div class="social-link">
+                        <a href="http://vk.com" target="_blank">
+                            <i class="fab fa-vk" style="color: #4c75a3;"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f" style="color: #4867aa;"></i>
+                        </a>
+                        <a href="http://odnoklassniki.ru/" target="_blank">
+                            <i class="fab fa-odnoklassniki" style="color: #f7931e;"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fab fa-twitter" style="color: #41abe1;"></i>
+                        </a>
+                        <a href="https://plus.google.com/" target="_blank">
+                            <i class="fab fa-google-plus-g" style="color: #dd4c3b;"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank">
+                            <i class="fab fa-youtube" style="color: #ee1c1b;"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        var input = document.getElementById('custom_input');
+        var input_wrap = document.getElementById('special_subscribe');
+        input.onfocus = function () {
+            input_wrap.classList.add("active");
+        };
+        input.onblur = function () {
+            input_wrap.classList.remove("active");
+        };
+    </script>
+</body>
+</html>
